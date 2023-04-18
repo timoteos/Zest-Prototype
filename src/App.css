@@ -1,38 +1,332 @@
-.App {
-  text-align: center;
+
+body {
+  font-family: "Nunito";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sGreen {
+  color: #FF0000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sWhite {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.sSmoke {
+  color: hsla(0,0%,100%,.7)
 }
 
-@keyframes App-logo-spin {
+.ui.cards {
+  display: flex;
+  justify-content: center;
+}
+
+
+.line {
+  position: relative;
+  top: 50%;
+  width: 30em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; transform: translateY(-50%);
+}
+
+.noLine {
+  position: relative;
+  top: 50%;
+  width: 30em;
+  margin: 0 auto;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; transform: translateY(-50%);
+}
+.anime-type {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+  blinkText 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
   from {
-    transform: rotate(0deg);
+    width: 0;
+  } to {
+    width: em;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@keyframes blinkText {
+  from {
+    border-right-color: rgba(255,  255, 255, 0.75);
+  } to {
+    border-right-color: transparent;
   }
+}
+
+
+
+
+
+.startEnd {
+  animation: cssAnimation 250ms forwards;
+}
+
+/** May delete Lateer  **/
+.hide {
+  display: none;
+}
+
+.unHide {
+  display: block !important;
+}
+
+@keyframes cssAnimation {
+  from {visibility: hidden;}
+  to   {visibility: visible;}
+}
+
+
+.line2 {
+  position: relative;
+  top: 50%;
+  width: 12em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; transform: translateY(-50%);
+}
+
+.anime-type2 {
+  animation: typewriter2 2s steps(40) 1s 1 alternate-reverse both,
+  typewriterReverse 2s steps(40) 2s 2.5 alternate both, 
+  blinkText2 500ms steps(40) 1s infinite normal
+
+}
+
+
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  } to {
+    width: em;
+  }
+}
+
+
+@keyframes typewriterReverse {
+  from {
+    width: 0;
+  } to {
+    width: em;
+  }
+}
+
+@keyframes blinkText2 {
+  0%{
+    display: none;
+  }
+  1%{
+    display: block;
+  }
+  from {
+    border-right-color: rgba(255,  255, 255, 0.75);
+  } to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+
+
+
+/** Window Styles **/
+.underlineLeft {
+  transition: width 1s;
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 20%;
+  border-top: 5px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.underlineRight {
+  transition: width 1s;
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 20%;
+  border-top: 5px solid #FF0000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.windowRight {
+  float: right;
+  text-align: center;
+  font-size: 10px;
+  transition: width 1s;
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.windowLeft:hover {
+  width: 1600px;
+  z-index: 3;
+  
+}
+
+.windowLeft {
+  float: left;
+  text-align: center;
+  font-size: 10px;
+  transition: width 1s;
+  color: hsla(0,0%,100%,.7);
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+} 
+
+.windowRight:hover {
+  width: 1600px;
+  z-index: 3;
+  text-align: center;
+}
+
+.windowRight:hover .rightImage {
+  transition: opacity;
+  opacity: 1 !important;
+}
+
+.windowLeft:hover .leftImage{
+  transition: opacity;
+  opacity: 1 !important;
+}
+
+.windowLeft:hover .underlineLeft {width: 60%}
+.windowRight:hover .underlineRight {width: 60%}
+
+
+
+
+
+
+
+/** Slide **/
+.slideRight {
+  float: right;
+  text-align: center;
+  font-size: 10px;
+  transition: width 1s;
+  color: black;
+  background-color: white;
+  width: 20%;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.slideLeft:hover {
+  width: 1600px;
+  z-index: 3;
+  
+}
+
+.slideLeft {
+  float: left;
+  text-align: center;
+  font-size: 10px;
+  transition: width 1s;
+  color: hsla(0,0%,100%,.7);
+  background-color: #6fbe44;
+  width: 1400px !important;
+  height: 700px;
+  z-index: 1;
+
+} 
+
+.slideRight:hover {
+  width: 1600px;
+  z-index: 3;
+  text-align: center;
+}
+
+.slideRight:hover .rightImage {
+  transition: opacity;
+  opacity: 1 !important;
+}
+
+.slideLeft:hover .slideImage{
+  transition: opacity;
+  opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Might Delete Later**/
+.slideParent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+.slideChild {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+
+.slideParent:hover .slideChild {
+  width: 100%;
+}
+
+
+.offset {
+  padding: 0 0 0 0 !important;
 }
