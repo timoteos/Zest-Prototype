@@ -20,11 +20,12 @@ class Section extends Component {
         return ( 
             <div>
                 <Segment style={{backgroundColor: colors.b, color: colors.c, height: {height}, fontSize: 24}}>
-                    <Grid container style={{marginTop: 25}}>
+                    <Grid container style={{marginTop: 25, }}>
                         <Grid.Row columns="2">
                             <Grid.Column verticalAlign="middle">
                                {flipped ?  <Image centered src={image} /> : text}
                             </Grid.Column>
+                            {/* <Grid.Column></Grid.Column> */}
                             <Grid.Column  verticalAlign="middle">
                                {flipped ? text : <Image src={image} />}
                             </Grid.Column>

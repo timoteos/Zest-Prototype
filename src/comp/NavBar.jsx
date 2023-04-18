@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Menu } from 'semantic-ui-react';
+import { Container, Menu, Segment, Form, Popup, Button, Icon } from 'semantic-ui-react';
 // import Logo from '../zest-logo.png';
 
 class NavBar extends Component {
@@ -8,10 +8,10 @@ class NavBar extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { popup:  false}
     }
 
-    handleClick = (e, {popup}) => console.log('click')//this.setState({active: popup})
+    handleClick = (e, {popup}) => this.setState({popup: !this.state.popup})
 
     render() { 
         return ( 
@@ -27,8 +27,16 @@ class NavBar extends Component {
                        
                     <Menu.Item name="LOGIN" style={{fontWeight: 700, marginRight: 100, color: "#FF0000"}} onClick={this.handleClick}/>
                 </Menu>
-                <div style={{position: "fixed", backgroundColor: 'white', width: '75%', top: 0, bottom: 0, zIndex: 10, margin: '10%'}}>
-                    oofssssssssssssdsdssssdssds
+                <div style={{display: this.state.popup ? 'block' : 'none', position: "fixed", backgroundColor: 'rgba(1,0.3,0.5, 0.9)', width: '75%', top: 0, bottom: 0, zIndex: 10, margin: '10%'}}>
+                    {/* <Segment> */}
+                        <Form style={{margin: '20%'}}>
+                            <h1 style={{color: 'white', marginTop: '10%',}}>Login Now!</h1>
+
+                           <Form.Input height='1000' label='email' placeholder='johndoe@gmail.com'/>
+                           <Form.Input label='password' placeholder='password' />
+                            <Button content='Login!' color='red'/>
+                        </Form>
+                    {/* </Segment> */}
                 </div>
             </div>
          );

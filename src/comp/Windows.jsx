@@ -25,12 +25,12 @@ class Windows extends Component {
                                         Immerse yourself in our activity to learn an retain shortcuts and increase your productivity tenfold!
                                     </p>
                                    </div>
-                                   <Image style={{opacity: 0, width: "40%", height: "80%", bottom: "300px", left: "800px"}}  className="leftImage" src="https://radgrad.ics.hawaii.edu/images/landing/abi-about-me.png"/>
+                                   <Image style={{opacity: 0, width: "40%", height: "80%", bottom: "300px", left: "800px"}}  className="leftImage" src="https://www.kindpng.com/picc/m/563-5631280_modern-flat-design-illustration-hd-png-download.png"/>
                                 </div>
                             </Grid.Column>
                             <Grid.Column className="offset">
                                 <div className="windowRight" style={{display: "flex", backgroundColor: "black"}}>
-                                   <div style={{maxWidth: 500, marginLeft: 200}}>
+                                   <div style={{maxWidth: 500, marginLeft: 350}}>
                                     <Header size="huge" textAlign="center" content="Master your shortcuts, productivity, and craft" style={{marginTop: "100px", fontSize: 36, width: 500, color: "white"}}/>
                                     <div className="underlineRight" style={{}}></div>
                                     <p style={{fontSize: 18, color: "white"}}>
@@ -38,7 +38,7 @@ class Windows extends Component {
                                         Immerse yourself in our activity to learn an retain shortcuts and increase your productivity tenfold!
                                     </p>
                                    </div>
-                                   <Image style={{opacity: 1, width: "40%", height: "80%", marginTop: 100, marginLeft: 100, bottom: "50px"}}  className="rightImage" src="https://radgrad.ics.hawaii.edu/images/landing/abi-degree-planner.png"/>
+                                   <Image style={{opacity: 1, width: "40%", height: "80%", marginTop: 100, marginLeft: 100, bottom: "50px"}}  className="rightImage" src="https://www.kindpng.com/picc/m/58-584907_modern-flat-design-isometric-illustration-hd-png-download.png"/>
                                 </div>
                             </Grid.Column>
                         </Grid.Row>

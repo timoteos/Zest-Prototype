@@ -26,8 +26,8 @@ class Slide extends Component {
                                         After you graduate, you can become a mentor, and answer student questions about life after graduation and how to best prepare for it. We have 6 mentors from locations including: New York City, NY, Palo Alto, CA, San Francisco, CA, Honolulu, HI.
                                     </p>
                                    </div>
-                                   <Image style={{opacity: 1, width: "40%", height: "40%", bottom: "500px", left: "800px"}}  className="leftImage" src="https://radgrad.ics.hawaii.edu/images/landing/abi-course-reviews.png"/>
-                                   <Image style={{opacity: 1, width: "40%", height: "40%", bottom: "460px", left: "800px"}}  className="leftImage" src="https://radgrad.ics.hawaii.edu/images/landing/abi-mentor-space.png"/>
+                                   <Image style={{opacity: 1, width: "40%", height: "40%", bottom: "500px", left: "800px"}}  className="leftImage" src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1511848673/1511848671.jpg"/>
+                                   <Image style={{opacity: 1, width: "40%", height: "40%", bottom: "460px", left: "800px"}}  className="leftImage" src="https://www.aihr.com/wp-content/uploads/Learning-and-development.png"/>
                                 </div>
                             </Grid.Column>
                             <Grid.Column className="offset">
